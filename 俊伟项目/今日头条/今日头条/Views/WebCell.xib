@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="170" id="KGk-i7-Jjw" customClass="WebCell">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xOH-1Y-Vib">
+                        <rect key="frame" x="0.0" y="0.0" width="381" height="169"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    </webView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="xOH-1Y-Vib" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6ep-ak-Six"/>
+                    <constraint firstItem="xOH-1Y-Vib" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QpA-V2-pc0"/>
+                    <constraint firstAttribute="bottom" secondItem="xOH-1Y-Vib" secondAttribute="bottom" id="Y5x-gP-sMe"/>
+                    <constraint firstAttribute="trailing" secondItem="xOH-1Y-Vib" secondAttribute="trailing" id="dey-HN-4L9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="webLoadView" destination="xOH-1Y-Vib" id="MfE-Dg-cvh"/>
+            </connections>
+            <point key="canvasLocation" x="300.5" y="455"/>
+        </tableViewCell>
+    </objects>
+</document>
